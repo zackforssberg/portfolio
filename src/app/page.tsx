@@ -1,3 +1,5 @@
+import Article from "./components/article/Article";
+
 export default function Home() {
-  return <div className="font-bold">content</div>;
+  return <Article />;
 }
