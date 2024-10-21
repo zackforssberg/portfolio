@@ -16,6 +16,10 @@ const Article = () => {
       <p className="text-xl mt-5">
         I&apos;m Zack, a Frontend Developer student.
       </p>
+      <p className="mt-3 text-xl">
+        Currently I&apos;m more than half way through my program at IT-Högskolan
+        (Göteborg).
+      </p>
     </div>
   );
 };
