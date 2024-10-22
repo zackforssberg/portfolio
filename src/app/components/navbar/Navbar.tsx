@@ -35,12 +35,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-blue-600 p-4">
+    <nav className="bg-gray-400 p-4">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <div className="text-white text-lg font-bold">
+        {/* <div className="text-white text-lg font-bold">
           <Link href="/">MyLogo</Link>
-        </div>
+        </div> */}
 
         {/* Hamburger Icon */}
         <div className="md:hidden">
