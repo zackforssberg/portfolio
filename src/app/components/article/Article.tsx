@@ -1,4 +1,5 @@
 import Image from "next/image";
+import EmailButton from "../EmailButton";
 
 const Article = () => {
   return (
@@ -17,10 +18,11 @@ const Article = () => {
         <p className="text-xl mt-5">
           I&apos;m Zack, a Frontend Developer student.
         </p>
-        <p className="mt-3 text-xl">
+        <p className="mt-3 mb-3 text-xl">
           Currently I&apos;m more than half way through my program at
           IT-Högskolan (Göteborg).
         </p>
+        <EmailButton />
       </div>
     </div>
   );
