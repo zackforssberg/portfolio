@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        boink: 'boink 0.3s ease-in-out',
+      },
+    },
   },
   plugins: [],
 }
