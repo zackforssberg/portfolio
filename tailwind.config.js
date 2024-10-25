@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        boink: 'boink 0.3s ease-in-out',
+        boink: 'boink 0.2s ease-in-out',
         fade: 'fade 2s ease-in-out'
       },
       keyframes: {
