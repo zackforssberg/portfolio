@@ -1,35 +1,11 @@
-// import Link from "next/link";
-
-// const Navbar = () => {
-//   return (
-//     <nav>
-//       <ul className="flex gap-2 text-xl font-semibold m-2">
-//         <li>
-//           <Link href="/">Home</Link>
-//         </li>
-//         <li>
-//           <Link href="/about">About</Link>
-//         </li>
-//         <li>
-//           <Link href="/contact">Contact</Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
 "use client";
 
 import { useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
-  // State to handle the menu open/close
   const [isOpen, setIsOpen] = useState(false);
 
-  // Function to toggle the menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -80,8 +56,12 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu (Shown when hamburger is clicked) */}
-      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
+      {/* Mobile Menu with animation */}
+      <div
+        className={`transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen ? "max-h-40" : "max-h-0"
+        } md:hidden`}
+      >
         <div className="flex flex-col space-y-4 mt-4">
           <Link href="/" className="text-white">
             Home
@@ -97,3 +77,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+// className={`md:hidden ${isOpen ? "block" : "hidden"}`}
