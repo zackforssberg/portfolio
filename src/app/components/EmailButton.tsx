@@ -26,7 +26,7 @@ const EmailButton: React.FC = () => {
       <button
         onClick={copyToClipboard}
         className={`px-6 py-2 text-xl rounded-lg text-white font-semibold transition-colors duration-300
-          ${copied ? "bg-green-500" : "bg-sky-700 hover:bg-sky-800"} ${
+          ${copied ? "bg-green-600" : "bg-sky-700 hover:bg-sky-800"} ${
           boink ? "animate-boink" : ""
         }`}
       >
