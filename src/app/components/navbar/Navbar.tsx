@@ -1,14 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [menuHeight, setMenuHeight] = useState<number | undefined>(undefined);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (menuRef.current) {
+      setMenuHeight(menuRef.current.scrollHeight);
+    }
+  }, []);
 
   return (
     <nav className="bg-gray-400 p-4">
@@ -42,7 +50,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Links (Hidden on mobile, shown on desktop) */}
         <div className="hidden md:flex space-x-6">
           <Link href="/" className="text-white">
             Home
@@ -56,11 +63,12 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu with animation */}
       <div
-        className={`transition-all duration-300 ease-in-out overflow-hidden ${
-          isOpen ? "max-h-40" : "max-h-0"
-        } md:hidden`}
+        ref={menuRef}
+        style={{
+          maxHeight: isOpen ? `${menuHeight}px` : "0px",
+        }}
+        className={`transition-all duration-300 ease-in-out overflow-hidden md:hidden`}
       >
         <div className="flex flex-col space-y-4 mt-4">
           <Link href="/" className="text-white">
@@ -77,5 +85,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-// className={`md:hidden ${isOpen ? "block" : "hidden"}`}
