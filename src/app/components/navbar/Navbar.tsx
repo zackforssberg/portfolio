@@ -54,11 +54,11 @@ export default function Navbar() {
           <Link href="/" className="text-white">
             Home
           </Link>
-          <Link href="/about" className="text-white">
-            About
+          <Link href="" className="text-white">
+            About (coming soon)
           </Link>
-          <Link href="/contact" className="text-white">
-            Contact
+          <Link href="" className="text-white">
+            Contact (coming soon)
           </Link>
         </div>
       </div>
@@ -74,11 +74,11 @@ export default function Navbar() {
           <Link href="/" className="text-white">
             Home
           </Link>
-          <Link href="/about" className="text-white">
-            About
+          <Link href="" className="text-white">
+            About (coming soon)
           </Link>
-          <Link href="/contact" className="text-white">
-            Contact
+          <Link href="" className="text-white">
+            Contact (coming soon)
           </Link>
         </div>
       </div>
