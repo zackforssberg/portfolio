@@ -19,7 +19,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-gray-400 p-4">
+    <nav className="bg-zinc-500 p-4">
       <div className="flex items-center justify-between">
         {/* Logo */}
         {/* <div className="text-white text-lg font-bold">
@@ -68,7 +68,7 @@ export default function Navbar() {
         style={{
           maxHeight: isOpen ? `${menuHeight}px` : "0px",
         }}
-        className={`transition-all duration-300 ease-in-out overflow-hidden md:hidden`}
+        className={`transition-all duration-500 ease-in-out overflow-hidden md:hidden`}
       >
         <div className="flex flex-col space-y-4 mt-4">
           <Link href="/" className="text-white">
