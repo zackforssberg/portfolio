@@ -1,5 +1,5 @@
 import Image from "next/image";
-import EmailButton from "../EmailButton";
+import EmailButton from "./EmailButton";
 
 const Article = () => {
   return (
