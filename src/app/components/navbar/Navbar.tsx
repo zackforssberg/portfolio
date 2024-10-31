@@ -54,10 +54,10 @@ export default function Navbar() {
           <Link href="/" className="text-white">
             Home
           </Link>
-          <Link href="" className="text-white">
+          <Link href="" className="text-white cursor-default">
             About (coming soon)
           </Link>
-          <Link href="" className="text-white">
+          <Link href="" className="text-white cursor-default">
             Contact (coming soon)
           </Link>
         </div>
