@@ -19,7 +19,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-zinc-500 p-6">
+    <nav className="bg-zinc-500 p-4 md:p-6">
       <div className="flex items-center justify-between">
         {/* Logo */}
         {/* <div className="text-white text-lg font-bold">
