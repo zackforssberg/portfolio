@@ -55,10 +55,10 @@ export default function Navbar() {
             Home
           </Link>
           <Link href="" className="text-white cursor-default">
-            About(coming.soon)
+            My Projects (coming soon)
           </Link>
           <Link href="" className="text-white cursor-default">
-            Contact(coming.soon)
+            Contact (coming soon)
           </Link>
         </div>
       </div>
@@ -75,7 +75,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link href="" className="text-white">
-            About (coming soon)
+            My Projects (coming soon)
           </Link>
           <Link href="" className="text-white">
             Contact (coming soon)
