@@ -68,9 +68,9 @@ export default function Navbar() {
         style={{
           maxHeight: isOpen ? `${menuHeight}px` : "0px",
         }}
-        className={`transition-all duration-500 ease-in-out overflow-hidden md:hidden`}
+        className={`transition-all duration-500 ease-in-out overflow-hidden md:hidden absolute left-0 w-full bg-zinc-500 pb-3`}
       >
-        <div className="flex flex-col space-y-4 mt-4">
+        <div className="flex flex-col space-y-4 mt-4 ml-4">
           <Link href="/" className="text-white">
             Home
           </Link>
