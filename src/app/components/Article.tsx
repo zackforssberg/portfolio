@@ -3,7 +3,7 @@ import EmailButton from "./EmailButton";
 
 const Article = () => {
   return (
-    <div className="ml-4 mr-4 md:flex items-center">
+    <div className="ml-4 mr-4 md:ml-56 md:mr-56  md:flex items-center">
       <div className="flex justify-center">
         <Image
           alt="Profile picture"
@@ -19,7 +19,7 @@ const Article = () => {
           I&apos;m Zack, a Frontend Developer student.
         </p>
         <p className="mt-3 mb-3 text-xl">
-          Currently I&apos;m more than half way through my program at
+          Currently I&apos;m more than halfway through my program at
           IT-Högskolan (Göteborg).
         </p>
         <EmailButton />

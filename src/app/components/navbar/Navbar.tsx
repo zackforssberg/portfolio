@@ -19,7 +19,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-zinc-500 p-4">
+    <nav className="bg-zinc-500 p-6">
       <div className="flex items-center justify-between">
         {/* Logo */}
         {/* <div className="text-white text-lg font-bold">
@@ -50,15 +50,15 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-7 text-xl">
           <Link href="/" className="text-white">
             Home
           </Link>
           <Link href="" className="text-white cursor-default">
-            About (coming soon)
+            About(coming.soon)
           </Link>
           <Link href="" className="text-white cursor-default">
-            Contact (coming soon)
+            Contact(coming.soon)
           </Link>
         </div>
       </div>
