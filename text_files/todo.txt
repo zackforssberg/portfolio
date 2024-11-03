@@ -1,0 +1,1 @@
+make the image look good on tablet and adjust the spacing between image and article text on desktop
