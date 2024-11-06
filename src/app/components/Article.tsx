@@ -11,6 +11,7 @@ const Article = () => {
           className="rounded-full object-cover m-12"
           height={250}
           width={250}
+          priority
         />
       </div>
       <div>
