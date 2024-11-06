@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="pl-4 pr-4 bg-emerald-400 min-h-64">
       <EmailButton />
 
-      <ul>
+      <ul className="text-xl underline underline-offset-4 flex space-x-4 mt-6">
         <li>
           <a
             href="https://www.linkedin.com/in/zack-forssberg-9b9711289/"
@@ -23,9 +23,6 @@ const Footer = () => {
           >
             GitHub
           </a>
-        </li>
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer"></a>
         </li>
       </ul>
     </div>
