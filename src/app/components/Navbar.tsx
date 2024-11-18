@@ -71,13 +71,13 @@ export default function Navbar() {
         className={`transition-all duration-500 ease-in-out overflow-hidden md:hidden absolute left-0 w-full bg-zinc-500 pb-3`}
       >
         <div className="flex flex-col space-y-4 mt-4 ml-4">
-          <Link href="/" className="text-white">
+          <Link href="/" className="text-white" onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="" className="text-white">
+          <Link href="" className="text-white" onClick={toggleMenu}>
             My Projects (coming soon)
           </Link>
-          <Link href="" className="text-white">
+          <Link href="" className="text-white" onClick={toggleMenu}>
             Contact (coming soon)
           </Link>
         </div>
