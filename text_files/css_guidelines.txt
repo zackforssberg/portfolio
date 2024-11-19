@@ -1,2 +1,4 @@
 Spacing from edges
   - mobile: m-4/16px
+  - tablet: m-8/32px
+  - desktop: m-12/48px

@@ -3,7 +3,7 @@ import EmailButton from "./EmailButton";
 
 const Article = () => {
   return (
-    <div className="ml-4 mr-4 md:ml-56 md:mr-56  md:flex items-center">
+    <div className="ml-4 mr-4 md:ml-8 md:mr-8 lg:ml-12 lg:mr-12  md:flex items-center gap-8">
       <div className="flex justify-center">
         <Image
           alt="Profile picture"
