@@ -1,8 +1,10 @@
 import EmailButton from "./EmailButton";
 
+import styles from "./../styles/gradient.module.css";
+
 const Footer = () => {
   return (
-    <div className="pl-4 pr-4 pb-8 bg-zinc-500 min-h-64 mt-20">
+    <div className={`pl-4 pr-4 pb-8 min-h-64 mt-20 ${styles.gradient}`}>
       <div className="pt-8">
         <h2 className="text-2xl">Feel free to say hello</h2>
         <p className="text-xl pt-3">
