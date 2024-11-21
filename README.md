@@ -1,3 +1,5 @@
-Soon to be my portfolio
+## First release is now live!!!
 
-Using react, typescript and next.js
+https://www.zackforssberg.se/ 
+
+This portfolio was built using react, typescript, next.js and tailwindcss
