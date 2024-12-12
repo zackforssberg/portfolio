@@ -4,8 +4,8 @@ const AboutMe = () => {
       <section className="mb-6">
         <h3 className="text-2xl mb-2">How it began</h3>
         <p className="text-xl">
-          My programming journy began 2023 when I signed up for a 3 week web
-          development intro course, where my intrest started to grow.
+          My programming journey began in 2023 when I signed up for a 3-week web
+          development intro course, where my interest started to grow.
         </p>
       </section>
       <section className="mb-6">
@@ -20,7 +20,7 @@ const AboutMe = () => {
         <h3 className="text-2xl mb-2">What I enjoy</h3>
         <p className="text-xl">
           I enjoy working with tools like React, Next.js, and TailwindCSS to
-          build responsive, modern websites, just like this one.
+          build responsive, modern websites - just like this one.
         </p>
       </section>
       <section className="mb-6">

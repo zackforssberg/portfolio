@@ -20,8 +20,8 @@ const Article = () => {
           I&apos;m Zack, a Frontend Developer student.
         </p>
         <p className="mt-3 mb-3 text-xl">
-          Currently I&apos;m more than halfway through my program at
-          IT-Högskolan (Göteborg).
+          Currently, I&apos;m more than halfway through my program at
+          IT-Högskolan in Gothenburg.
         </p>
         <EmailButton />
       </div>
