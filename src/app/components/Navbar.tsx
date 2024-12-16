@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex space-x-7 text-xl">
-          <Link href="/" className="text-white">
+          <Link href="/" className="text-white underline underline-offset-8">
             Home
           </Link>
           <Link href="" className="text-white cursor-default">
