@@ -11,9 +11,9 @@ const AboutMe = () => {
       <section className="mb-6">
         <h3 className="text-2xl mb-2">Current focus</h3>
         <p className="text-xl">
-          At the moment, I’m expanding my skills in CMS (Content Management
-          Systems), learning how to build and manage dynamic websites using
-          platforms like WordPress.
+          I&apos;m currently doing an internship at Volvo Cars, gaining hands-on
+          experience in web development. This opportunity allows me to apply my
+          skills in a real-world setting and grow professionally.
         </p>
       </section>
       <section className="mb-6">
