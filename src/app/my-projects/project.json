@@ -3,6 +3,6 @@
     "title": "Last Ball Standing",
     "description": "Last Ball Standing is a multiplayer pool-themed game where players receive random pool ball numbers and must eliminate all but their own. Built with Next.js, React, and TailwindCSS, the game features a randomized ball distribution, turn-based mechanics, and a simple yet engaging UI.",
     "url": "pool-game-zack-forssbergs-projects.vercel.app",
-    "imageURL": "imageURL"
+    "imageURL": "https://placehold.co/600x400"
   }
 ]
