@@ -19,7 +19,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-sky-700 p-4 md:p-6">
+    <nav className="bg-sky-700 p-4 md:p-8 lg:p-12">
       <div className="flex items-center justify-between">
         {/* Logo */}
         {/* <div className="text-white text-lg font-bold">
