@@ -18,14 +18,18 @@ const MyProjects = () => {
             />
             <h2 className="text-xl font-semibold">{project.title}</h2>
             <p className="text-gray-700 mb-4">{project.description}</p>
-            <Link
-              href={`https://${project.url}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              Visit Project
-            </Link>
+            {project.url ? (
+              <Link
+                href={`https://${project.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Visit Project
+              </Link>
+            ) : (
+              <p>This project is not published.</p>
+            )}
           </div>
         ))}
       </div>
