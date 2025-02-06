@@ -51,11 +51,17 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex space-x-7 text-xl">
-          <Link href="/" className="text-white underline underline-offset-8">
+          <Link
+            href="/"
+            className="text-white hover:underline underline-offset-8"
+          >
             Home
           </Link>
-          <Link href="" className="text-white cursor-default">
-            My Projects (coming soon)
+          <Link
+            href="/my-projects"
+            className="text-white hover:underline underline-offset-8"
+          >
+            Projects
           </Link>
           <Link href="" className="text-white cursor-default">
             Contact (coming soon)
@@ -74,8 +80,8 @@ export default function Navbar() {
           <Link href="/" className="text-white" onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="" className="text-white" onClick={toggleMenu}>
-            My Projects (coming soon)
+          <Link href="/my-projects" className="text-white" onClick={toggleMenu}>
+            Projects
           </Link>
           <Link href="" className="text-white" onClick={toggleMenu}>
             Contact (coming soon)
