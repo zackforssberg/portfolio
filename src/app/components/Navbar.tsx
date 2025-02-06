@@ -58,7 +58,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/my-projects"
+            href="/projects"
             className="text-white hover:underline underline-offset-8"
           >
             Projects
@@ -80,7 +80,7 @@ export default function Navbar() {
           <Link href="/" className="text-white" onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="/my-projects" className="text-white" onClick={toggleMenu}>
+          <Link href="/projects" className="text-white" onClick={toggleMenu}>
             Projects
           </Link>
           <Link href="" className="text-white" onClick={toggleMenu}>
