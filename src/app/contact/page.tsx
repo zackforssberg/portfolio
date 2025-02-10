@@ -1,5 +1,7 @@
+import RequestCvModal from "../components/RequestCVModal";
+
 const Contact = () => {
-  return <h1>Contact Page</h1>;
+  return <RequestCvModal />;
 };
 
 export default Contact;
