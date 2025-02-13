@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+      },
       animation: {
         boink: 'boink 0.2s ease-in-out',
         fade: 'fade 2s ease-in-out'
