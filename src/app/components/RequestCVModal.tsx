@@ -51,7 +51,7 @@ export default function RequestCvModal() {
 
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+          <div className="bg-foreground text-background p-6 rounded-lg shadow-lg w-full max-w-md">
             <h2 className="text-xl font-bold mb-4">Request my CV</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -62,7 +62,7 @@ export default function RequestCvModal() {
                   value={formData.user_name}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg bg-foreground"
                 />
               </div>
 
@@ -74,7 +74,7 @@ export default function RequestCvModal() {
                   value={formData.user_email}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg bg-foreground"
                 />
               </div>
 
@@ -85,7 +85,7 @@ export default function RequestCvModal() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg bg-foreground"
                   rows={4}
                 />
               </div>
