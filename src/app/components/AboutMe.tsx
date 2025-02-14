@@ -8,6 +8,7 @@ const AboutMe = () => {
           development intro course, where my interest started to grow.
         </p>
       </section>
+      <hr className="bg-foreground mb-4" />
       <section className="mb-6">
         <h3 className="text-2xl mb-2">Current focus</h3>
         <p className="text-xl">
@@ -16,6 +17,7 @@ const AboutMe = () => {
           skills in a real-world setting and grow professionally.
         </p>
       </section>
+      <hr className="bg-foreground mb-4" />
       <section className="mb-6">
         <h3 className="text-2xl mb-2">What I enjoy</h3>
         <p className="text-xl">
@@ -23,6 +25,7 @@ const AboutMe = () => {
           build responsive, modern websites - just like this one.
         </p>
       </section>
+      <hr className="bg-foreground mb-4" />
       <section className="mb-6">
         <h3 className="text-2xl mb-2">Future aspirations</h3>
         <p className="text-xl">
