@@ -5,12 +5,14 @@
 :root {
   --background: #f4f4f5;
   --foreground: #3B3B3B;
+  --navbar: #3069A1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #3B3B3B;
     --foreground: #ededed;
+    --navbar: #3B3B3B;
   }
 }
 

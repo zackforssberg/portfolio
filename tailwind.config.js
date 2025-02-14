@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        navbarcolor: 'var(--navbar)'
       },
       animation: {
         boink: 'boink 0.2s ease-in-out',
