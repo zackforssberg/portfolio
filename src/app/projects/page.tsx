@@ -10,7 +10,7 @@ const MyProjects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-foreground text-background  shadow-md p-4 rounded-lg"
+            className="bg-primary text-foreground  shadow-md p-4 rounded-lg"
           >
             <Image
               src={project.imageURL}

@@ -5,6 +5,7 @@
 :root {
   --background: #f4f4f5;
   --foreground: #3B3B3B;
+  --primary: #e5e5e5;
   --navbar: #3069A1;
 }
 
@@ -12,6 +13,7 @@
   :root {
     --background: #3B3B3B;
     --foreground: #ededed;
+    --primary: #4f4f4f;
     --navbar: #3B3B3B;
   }
 }
