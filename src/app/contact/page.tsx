@@ -1,7 +1,11 @@
-import RequestCvModal from "../components/RequestCVModal";
+import { ContactForm } from "../components/ContactForm";
 
 const Contact = () => {
-  return <RequestCvModal />;
+  return (
+    <div className="m-12">
+      <ContactForm />
+    </div>
+  );
 };
 
 export default Contact;

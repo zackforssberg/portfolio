@@ -1,4 +1,5 @@
 import EmailButton from "./EmailButton";
+import { RequestCvButton } from "./RequestCvButton";
 
 import styles from "./../styles/gradient.module.css";
 
@@ -14,8 +15,9 @@ const Footer = () => {
           world.
         </p>
       </div>
-      <div className="pt-10">
+      <div className="flex flex-col md:flex-row gap-4 pt-10">
         <EmailButton />
+        <RequestCvButton />
       </div>
 
       <ul className="text-xl underline underline-offset-4 flex space-x-4 mt-6">

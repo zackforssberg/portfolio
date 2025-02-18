@@ -22,7 +22,7 @@ const EmailButton: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center">
+    <div className="flex">
       <button
         onClick={copyToClipboard}
         className={`px-6 py-2 text-xl rounded-lg text-white font-semibold transition-colors duration-300
