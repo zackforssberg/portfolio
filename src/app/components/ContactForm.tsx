@@ -61,7 +61,7 @@ export function ContactForm({ onClose, isModal = false }: ContactFormProps) {
             value={formData.user_name}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg bg-foreground"
+            className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg text-black bg-zinc-100"
           />
         </div>
 
@@ -73,7 +73,7 @@ export function ContactForm({ onClose, isModal = false }: ContactFormProps) {
             value={formData.user_email}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg bg-foreground"
+            className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg text-black bg-zinc-100"
           />
         </div>
 
@@ -84,7 +84,7 @@ export function ContactForm({ onClose, isModal = false }: ContactFormProps) {
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg bg-foreground"
+            className="w-full px-3 py-2 border-2 border-gray-300 rounded-lg text-black bg-zinc-100"
             rows={4}
           />
         </div>
@@ -116,7 +116,7 @@ export function ContactForm({ onClose, isModal = false }: ContactFormProps) {
   if (isModal) {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-        <div className="bg-foreground text-background p-6 rounded-lg shadow-lg w-full max-w-md m-4">
+        <div className="bg-zinc-100  p-6 rounded-lg shadow-lg w-full max-w-md m-4">
           {formContent}
         </div>
       </div>
