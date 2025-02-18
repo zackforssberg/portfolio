@@ -116,7 +116,7 @@ export function ContactForm({ onClose, isModal = false }: ContactFormProps) {
   if (isModal) {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-        <div className="bg-foreground text-background p-6 rounded-lg shadow-lg w-full max-w-md">
+        <div className="bg-foreground text-background p-6 rounded-lg shadow-lg w-full max-w-md m-4">
           {formContent}
         </div>
       </div>
