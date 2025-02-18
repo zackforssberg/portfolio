@@ -2,11 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [menuHeight, setMenuHeight] = useState<number | undefined>(undefined);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -17,15 +19,16 @@ export default function Navbar() {
       setMenuHeight(menuRef.current.scrollHeight);
     }
   }, []);
+
+  // Function to determine if link is active
+  const isActiveLink = (href: string) => {
+    return pathname === href;
+  };
+
   return (
     <>
       <nav className="bg-navbarcolor p-4 md:p-8 lg:p-12">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          {/* <div className="text-white text-lg font-bold">
-          <Link href="/">MyLogo</Link>
-        </div> */}
-
           {/* Hamburger Icon */}
           <div className="md:hidden">
             <button
@@ -53,18 +56,27 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-7 text-xl">
             <Link
               href="/"
-              className="text-white hover:underline underline-offset-8"
+              className={`text-white hover:underline underline-offset-8 ${
+                isActiveLink("/") ? "underline" : ""
+              }`}
             >
               Home
             </Link>
             <Link
               href="/projects"
-              className="text-white hover:underline underline-offset-8"
+              className={`text-white hover:underline underline-offset-8 ${
+                isActiveLink("/projects") ? "underline" : ""
+              }`}
             >
               Projects
             </Link>
-            <Link href="" className="text-white cursor-default">
-              Contact (coming soon)
+            <Link
+              href="/contact"
+              className={`text-white hover:underline underline-offset-8 ${
+                isActiveLink("/contact") ? "underline" : ""
+              }`}
+            >
+              Contact
             </Link>
           </div>
         </div>
@@ -77,14 +89,32 @@ export default function Navbar() {
           className={`transition-all duration-500 ease-in-out overflow-hidden md:hidden absolute left-0 w-full bg-navbarcolor`}
         >
           <div className="flex flex-col space-y-4 mt-4 ml-4 pb-3">
-            <Link href="/" className="text-white" onClick={toggleMenu}>
+            <Link
+              href="/"
+              className={`text-white ${
+                isActiveLink("/") ? "underline underline-offset-8" : ""
+              }`}
+              onClick={toggleMenu}
+            >
               Home
             </Link>
-            <Link href="/projects" className="text-white" onClick={toggleMenu}>
+            <Link
+              href="/projects"
+              className={`text-white ${
+                isActiveLink("/projects") ? "underline underline-offset-8" : ""
+              }`}
+              onClick={toggleMenu}
+            >
               Projects
             </Link>
-            <Link href="" className="text-white" onClick={toggleMenu}>
-              Contact (coming soon)
+            <Link
+              href="/contact"
+              className={`text-white ${
+                isActiveLink("/contact") ? "underline underline-offset-8" : ""
+              }`}
+              onClick={toggleMenu}
+            >
+              Contact
             </Link>
           </div>
           <hr className="mt-auto" />
