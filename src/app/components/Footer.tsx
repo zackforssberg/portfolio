@@ -16,8 +16,8 @@ const Footer = () => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-4 pt-10">
-        <EmailButton />
         <RequestCvButton />
+        <EmailButton />
       </div>
 
       <ul className="text-xl underline underline-offset-4 flex space-x-4 mt-6">
