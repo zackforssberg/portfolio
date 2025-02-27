@@ -6,7 +6,7 @@ import styles from "./../styles/gradient.module.css";
 const Footer = () => {
   return (
     <div
-      className={`pl-4 pr-4 md:pl-8 md:pr-8 lg:pl-12 lg:pr-12 pb-8 min-h-64 mt-20 text-neutral-950 ${styles.gradient}`}
+      className={`pl-4 pr-4 md:pl-8 md:pr-8 lg:pl-12 lg:pr-12 pb-8 min-h-64 text-neutral-950 ${styles.gradient}`}
     >
       <div className="pt-8">
         <h2 className="text-2xl">Feel free to say hi</h2>
