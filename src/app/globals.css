@@ -11,10 +11,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #3B3B3B;
+    --background: #374355;
     --foreground: #ededed;
-    --primary: #4f4f4f;
-    --navbar: #3B3B3B;
+    --primary: #3e4c61;
+    --navbar: #374355;
   }
 }
 
