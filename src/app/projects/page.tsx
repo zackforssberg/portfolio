@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const MyProjects = () => {
   return (
-    <div className="h-fit m-4 md:m-8 lg:m-12">
+    <div className="h-fit m-4 md:m-8 lg:m-12 lg:mb-20">
       <h1 className="text-3xl font-bold mb-6">My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
