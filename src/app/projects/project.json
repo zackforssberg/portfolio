@@ -3,12 +3,14 @@
     "title": "Last Ball Standing",
     "description": "Last Ball Standing is a multiplayer pool-themed game where players receive random pool ball numbers and must eliminate all but their own. Built with Next.js, React, TypeScript and TailwindCSS, the game features a randomized ball distribution, turn-based mechanics, and a simple yet engaging UI.",
     "url": "pool-game-zack-forssbergs-projects.vercel.app",
+    "github": "github.com/zackforssberg/pool-game",
     "imageURL": "/pool-game.avif"
   },
   {
     "title": "Svartsjö Gård",
     "description": "Svartsjö Gård is my parents farm located just northeast of Mjöhult. This website provides information and photos of the farm. Visitors can explore a gallery of images and learn more about the history of the farm.",
     "url": "",
+    "github": "",
     "imageURL": "/svartsjo.avif"
   }
 

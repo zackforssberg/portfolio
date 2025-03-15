@@ -10,7 +10,7 @@ const MyProjects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-primary text-foreground  shadow-md p-4 rounded-lg"
+            className="bg-primary text-foreground shadow-md p-4 rounded-lg"
           >
             <Image
               src={project.imageURL}
@@ -32,6 +32,16 @@ const MyProjects = () => {
               </Link>
             ) : (
               <p>This project is not published.</p>
+            )}
+            {project.github && (
+              <Link
+                href={`https://${project.github}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline ml-4"
+              >
+                Show me on GitHub
+              </Link>
             )}
           </div>
         ))}
